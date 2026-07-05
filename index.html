@@ -39,6 +39,15 @@
   }
   </script>
 
+  <!-- Preconnect for Google Fonts (non-blocking) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Montserrat:wght@400;500;600;700;800&display=swap" media="print" onload="this.media='all'" />
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Montserrat:wght@400;500;600;700;800&display=swap" /></noscript>
+
+  <!-- Preload critical hero image -->
+  <link rel="preload" as="image" href="assets/images/hero-bg.webp" fetchpriority="high" />
+
   <link rel="stylesheet" href="css/style.css" />
 </head>
 
@@ -71,7 +80,7 @@
     <div class="container">
       <nav class="nav-inner" aria-label="Main navigation">
         <a href="#hero" class="nav-logo" aria-label="AquaVL Property Care - Home">
-          <img src="assets/logos/log_white_svg.svg" alt="AquaVL Property Care Logo" id="navLogo" />
+          <img src="assets/logos/log_white_svg.svg" alt="AquaVL Property Care Logo" id="navLogo" width="120" height="62" />
         </a>
 
         <ul class="nav-links" role="list">
@@ -118,7 +127,17 @@
   ============================================================ -->
   <main>
     <section id="hero" aria-labelledby="heroTitle">
-      <div class="hero-bg" aria-hidden="true"></div>
+      <!-- Hero background as img for priority loading -->
+      <img
+        src="assets/images/hero-bg.webp"
+        alt=""
+        aria-hidden="true"
+        class="hero-bg"
+        fetchpriority="high"
+        loading="eager"
+        width="1920"
+        height="1080"
+      />
       <div class="hero-overlay" aria-hidden="true"></div>
 
       <div class="container">
@@ -249,7 +268,7 @@
                 <p class="review-text">"Absolutely amazing results on our driveway. It looks brand new! The team was
                   punctual, professional and very thorough. Will definitely book again."</p>
                 <div class="review-author">
-                  <div class="review-avatar"><img src="assets/images/avatar-sarah.jpg" alt="Sarah M." /></div>
+                  <div class="review-avatar"><img src="assets/images/avatar-sarah.webp" alt="Sarah M." /></div>
                   <div>
                     <div class="review-name">Sarah M.</div>
                     <div class="review-location">Glenelg, Adelaide</div>
@@ -283,7 +302,7 @@
                 <p class="review-text">"Used AquaVL for our commercial property. Exceptional service — they cleaned the
                   entire exterior in one day. The building looks incredible. Highly recommended!"</p>
                 <div class="review-author">
-                  <div class="review-avatar"><img src="assets/images/avatar-james.jpg" alt="James T." /></div>
+                  <div class="review-avatar"><img src="assets/images/avatar-james.webp" alt="James T." /></div>
                   <div>
                     <div class="review-name">James T.</div>
                     <div class="review-location">CBD, Adelaide</div>
@@ -318,7 +337,7 @@
                   none.
                   Very reasonably priced and the results are outstanding. 5 stars isn't enough!"</p>
                 <div class="review-author">
-                  <div class="review-avatar"><img src="assets/images/avatar-linda.jpg" alt="Linda P." /></div>
+                  <div class="review-avatar"><img src="assets/images/avatar-linda.webp" alt="Linda P." /></div>
                   <div>
                     <div class="review-name">Linda P.</div>
                     <div class="review-location">Norwood, Adelaide</div>
@@ -352,7 +371,7 @@
                 <p class="review-text">"Extremely impressed with the house wash. The mold and dirt on the weatherboards
                   are completely gone. Professional service all around."</p>
                 <div class="review-author">
-                  <div class="review-avatar"><img src="assets/images/avatar-david.png" alt="David K." /></div>
+                  <div class="review-avatar"><img src="assets/images/avatar-david.webp" alt="David K." /></div>
                   <div>
                     <div class="review-name">David K.</div>
                     <div class="review-location">Mitcham, Adelaide</div>
@@ -386,7 +405,7 @@
                 <p class="review-text">"AquaVL did an outstanding job on our sandstone pavers and pool area. Highly
                   recommended for any delicate stone cleaning!"</p>
                 <div class="review-author">
-                  <div class="review-avatar"><img src="assets/images/avatar-chloe.png" alt="Chloe B." /></div>
+                  <div class="review-avatar"><img src="assets/images/avatar-chloe.webp" alt="Chloe B." /></div>
                   <div>
                     <div class="review-name">Chloe B.</div>
                     <div class="review-location">North Adelaide, Adelaide</div>
@@ -420,7 +439,7 @@
                 <p class="review-text">"Great communication and top-tier job on our commercial fleet washing. Punctual
                   and professional work."</p>
                 <div class="review-author">
-                  <div class="review-avatar"><img src="assets/images/avatar-marcus.png" alt="Marcus S." /></div>
+                  <div class="review-avatar"><img src="assets/images/avatar-marcus.webp" alt="Marcus S." /></div>
                   <div>
                     <div class="review-name">Marcus S.</div>
                     <div class="review-location">Mawson Lakes, Adelaide</div>
@@ -481,7 +500,7 @@
 
           <article class="service-card reveal reveal-delay-1">
             <div class="service-card-image">
-              <img src="assets/images/service-driveway.png" alt="Driveway Cleaning Adelaide" loading="lazy" />
+              <img src="assets/images/service-driveway.webp" alt="Driveway Cleaning Adelaide" loading="lazy" />
               <div class="service-icon">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                   stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
@@ -507,7 +526,7 @@
 
           <article class="service-card reveal reveal-delay-2">
             <div class="service-card-image">
-              <img src="assets/images/service-house-washing.png" alt="Exterior House Washing Adelaide" loading="lazy" />
+              <img src="assets/images/service-house-washing.webp" alt="Exterior House Washing Adelaide" loading="lazy" />
               <div class="service-icon">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                   stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
@@ -533,7 +552,7 @@
 
           <article class="service-card reveal reveal-delay-3">
             <div class="service-card-image">
-              <img src="assets/images/service-window-cleaning.png" alt="Window Cleaning Adelaide" loading="lazy" />
+              <img src="assets/images/service-window-cleaning.webp" alt="Window Cleaning Adelaide" loading="lazy" />
               <div class="service-icon">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                   stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
@@ -561,7 +580,7 @@
 
           <article class="service-card reveal reveal-delay-1">
             <div class="service-card-image">
-              <img src="assets/images/service-truck-wash.png" alt="Truck and Fleet Wash Adelaide" loading="lazy" />
+              <img src="assets/images/service-truck-wash.webp" alt="Truck and Fleet Wash Adelaide" loading="lazy" />
               <div class="service-icon">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                   stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
@@ -589,7 +608,7 @@
 
           <article class="service-card reveal reveal-delay-2">
             <div class="service-card-image">
-              <img src="assets/images/service-freezer-cleaning.png" alt="Industrial Freezer Cleaning Adelaide"
+              <img src="assets/images/service-freezer-cleaning.webp" alt="Industrial Freezer Cleaning Adelaide"
                 loading="lazy" />
               <div class="service-icon">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -616,7 +635,7 @@
 
           <article class="service-card reveal reveal-delay-3">
             <div class="service-card-image">
-              <img src="assets/images/service-commercial.png" alt="Commercial Property Care Adelaide" loading="lazy" />
+              <img src="assets/images/service-commercial.webp" alt="Commercial Property Care Adelaide" loading="lazy" />
               <div class="service-icon">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                   stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
@@ -665,7 +684,7 @@
                   <span>Before</span>
                   <span>After</span>
                 </div>
-                <img src="assets/images/before-after-driveway.jpg"
+                <img src="assets/images/before-after-driveway.webp"
                   alt="Before and after driveway pressure washing in Adelaide — dramatic cleaning result"
                   loading="lazy" />
                 <div class="gallery-label">
@@ -678,7 +697,7 @@
                   <span>Before</span>
                   <span>After</span>
                 </div>
-                <img src="assets/images/before-after-house.jpg"
+                <img src="assets/images/before-after-house.webp"
                   alt="Before and after exterior house washing in Adelaide — algae removal and bright clean result"
                   loading="lazy" />
                 <div class="gallery-label">
@@ -691,7 +710,7 @@
                   <span>Before</span>
                   <span>After</span>
                 </div>
-                <img src="assets/images/before-after-truck.jpg"
+                <img src="assets/images/before-after-truck.webp"
                   alt="Before and after truck and fleet wash in Adelaide — professional commercial vehicle cleaning result"
                   loading="lazy" />
                 <div class="gallery-label">
@@ -704,7 +723,7 @@
                   <span>Before</span>
                   <span>After</span>
                 </div>
-                <img src="assets/images/before-after-windows.png"
+                <img src="assets/images/before-after-windows.webp"
                   alt="Before and after window cleaning in Adelaide — streak-free crystal clear result"
                   loading="lazy" />
                 <div class="gallery-label">
@@ -717,7 +736,7 @@
                   <span>Before</span>
                   <span>After</span>
                 </div>
-                <img src="assets/images/before-after-patio.png"
+                <img src="assets/images/before-after-patio.webp"
                   alt="Before and after patio pressure washing in Adelaide — pavers restored to like-new condition"
                   loading="lazy" />
                 <div class="gallery-label">
@@ -730,7 +749,7 @@
                   <span>Before</span>
                   <span>After</span>
                 </div>
-                <img src="assets/images/before-after-roof.png"
+                <img src="assets/images/before-after-roof.webp"
                   alt="Before and after roof cleaning in Adelaide — mold and lichen removed, tiles restored"
                   loading="lazy" />
                 <div class="gallery-label">
@@ -884,7 +903,7 @@
 
           <div class="about-image-col reveal">
             <div class="about-image-wrap">
-              <img src="assets/images/hero-bg.png" alt="AquaVL team at work in Adelaide" class="about-img" />
+              <img src="assets/images/hero-bg.webp" alt="AquaVL team at work in Adelaide" class="about-img" />
               <div class="about-badge-float">
                 <div class="about-badge-icon">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -1208,7 +1227,7 @@
     </div>
   </footer>
 
-  <script src="js/main.js"></script>
+  <script src="js/main.js" defer></script>
 </body>
 
 </html>
