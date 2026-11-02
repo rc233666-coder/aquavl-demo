@@ -51,7 +51,7 @@
   </noscript>
 
   <!-- Preload critical hero image -->
-  <link rel="preload" as="image" href="assets/images/hero-bg.webp" fetchpriority="high" />
+  <link rel="preload" as="image" href="assets/images/hero-capa.webp" fetchpriority="high" />
 
   <link rel="stylesheet" href="css/style.css" />
 </head>
@@ -134,8 +134,8 @@
   <main>
     <section id="hero" aria-labelledby="heroTitle">
       <!-- Hero background as img for priority loading -->
-      <img src="assets/images/hero-bg.webp" alt="" aria-hidden="true" class="hero-bg" fetchpriority="high"
-        loading="eager" width="1920" height="1080" />
+      <img src="assets/images/hero-capa.webp" alt="" aria-hidden="true" class="hero-bg" fetchpriority="high"
+        loading="eager" width="1916" height="821" />
       <div class="hero-overlay" aria-hidden="true"></div>
 
       <div class="container">
@@ -224,259 +224,67 @@
 
     </section>
 
+
     <!-- ============================================================
-         GOOGLE REVIEWS SECTION (moved here per client request)
+         CLIENT TESTIMONIALS SECTION
     ============================================================ -->
     <section id="reviews" aria-labelledby="reviewsTitle">
       <div class="container">
         <div class="reviews-header text-center reveal">
-          <div class="section-tag">Customer Reviews</div>
-          <h2 class="section-title" id="reviewsTitle">What Adelaide Says <span>About Us</span></h2>
-          <p class="section-subtitle">Don't take our word for it — here's what our customers say about their AquaVL
-            experience.</p>
+          <h2 class="section-title" id="reviewsTitle">What Our <span>Clients</span> Say</h2>
+          <p class="section-subtitle">Real feedback from homes and businesses across Adelaide.</p>
+          <div class="reviews-divider"></div>
         </div>
 
-        <div class="reviews-carousel-container reveal">
-          <div class="reviews-carousel-track-wrapper" id="reviewsCarouselWrapper">
-            <div class="reviews-carousel-track" id="reviewsCarouselTrack">
-
-              <article class="review-card">
-                <div class="review-stars" aria-label="5 stars">
-                  <svg viewBox="0 0 24 24">
-                    <polygon
-                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
-                  </svg>
-                  <svg viewBox="0 0 24 24">
-                    <polygon
-                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
-                  </svg>
-                  <svg viewBox="0 0 24 24">
-                    <polygon
-                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
-                  </svg>
-                  <svg viewBox="0 0 24 24">
-                    <polygon
-                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
-                  </svg>
-                  <svg viewBox="0 0 24 24">
-                    <polygon
-                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
-                  </svg>
-                </div>
-                <p class="review-text">"Absolutely amazing results on our driveway. It looks brand new! The team was
-                  punctual, professional and very thorough. Will definitely book again."</p>
-                <div class="review-author">
-                  <div class="review-avatar"><img src="assets/images/avatar-sarah.webp" alt="Sarah M." /></div>
-                  <div>
-                    <div class="review-name">Sarah M.</div>
-                    <div class="review-location">Glenelg, Adelaide</div>
-                  </div>
-                </div>
-              </article>
-
-              <article class="review-card">
-                <div class="review-stars" aria-label="5 stars">
-                  <svg viewBox="0 0 24 24">
-                    <polygon
-                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
-                  </svg>
-                  <svg viewBox="0 0 24 24">
-                    <polygon
-                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
-                  </svg>
-                  <svg viewBox="0 0 24 24">
-                    <polygon
-                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
-                  </svg>
-                  <svg viewBox="0 0 24 24">
-                    <polygon
-                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
-                  </svg>
-                  <svg viewBox="0 0 24 24">
-                    <polygon
-                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
-                  </svg>
-                </div>
-                <p class="review-text">"Used AquaVL for our commercial property. Exceptional service — they cleaned the
-                  entire exterior in one day. The building looks incredible. Highly recommended!"</p>
-                <div class="review-author">
-                  <div class="review-avatar"><img src="assets/images/avatar-james.webp" alt="James T." /></div>
-                  <div>
-                    <div class="review-name">James T.</div>
-                    <div class="review-location">CBD, Adelaide</div>
-                  </div>
-                </div>
-              </article>
-
-              <article class="review-card">
-                <div class="review-stars" aria-label="5 stars">
-                  <svg viewBox="0 0 24 24">
-                    <polygon
-                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
-                  </svg>
-                  <svg viewBox="0 0 24 24">
-                    <polygon
-                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
-                  </svg>
-                  <svg viewBox="0 0 24 24">
-                    <polygon
-                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
-                  </svg>
-                  <svg viewBox="0 0 24 24">
-                    <polygon
-                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
-                  </svg>
-                  <svg viewBox="0 0 24 24">
-                    <polygon
-                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
-                  </svg>
-                </div>
-                <p class="review-text">"Had my windows and house exterior done. The attention to detail is second to
-                  none.
-                  Very reasonably priced and the results are outstanding. 5 stars isn't enough!"</p>
-                <div class="review-author">
-                  <div class="review-avatar"><img src="assets/images/avatar-linda.webp" alt="Linda P." /></div>
-                  <div>
-                    <div class="review-name">Linda P.</div>
-                    <div class="review-location">Norwood, Adelaide</div>
-                  </div>
-                </div>
-              </article>
-
-              <article class="review-card">
-                <div class="review-stars" aria-label="5 stars">
-                  <svg viewBox="0 0 24 24">
-                    <polygon
-                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
-                  </svg>
-                  <svg viewBox="0 0 24 24">
-                    <polygon
-                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
-                  </svg>
-                  <svg viewBox="0 0 24 24">
-                    <polygon
-                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
-                  </svg>
-                  <svg viewBox="0 0 24 24">
-                    <polygon
-                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
-                  </svg>
-                  <svg viewBox="0 0 24 24">
-                    <polygon
-                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
-                  </svg>
-                </div>
-                <p class="review-text">"Extremely impressed with the house wash. The mold and dirt on the weatherboards
-                  are completely gone. Professional service all around."</p>
-                <div class="review-author">
-                  <div class="review-avatar"><img src="assets/images/avatar-david.webp" alt="David K." /></div>
-                  <div>
-                    <div class="review-name">David K.</div>
-                    <div class="review-location">Mitcham, Adelaide</div>
-                  </div>
-                </div>
-              </article>
-
-              <article class="review-card">
-                <div class="review-stars" aria-label="5 stars">
-                  <svg viewBox="0 0 24 24">
-                    <polygon
-                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
-                  </svg>
-                  <svg viewBox="0 0 24 24">
-                    <polygon
-                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
-                  </svg>
-                  <svg viewBox="0 0 24 24">
-                    <polygon
-                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
-                  </svg>
-                  <svg viewBox="0 0 24 24">
-                    <polygon
-                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
-                  </svg>
-                  <svg viewBox="0 0 24 24">
-                    <polygon
-                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
-                  </svg>
-                </div>
-                <p class="review-text">"AquaVL did an outstanding job on our sandstone pavers and pool area. Highly
-                  recommended for any delicate stone cleaning!"</p>
-                <div class="review-author">
-                  <div class="review-avatar"><img src="assets/images/avatar-chloe.webp" alt="Chloe B." /></div>
-                  <div>
-                    <div class="review-name">Chloe B.</div>
-                    <div class="review-location">North Adelaide, Adelaide</div>
-                  </div>
-                </div>
-              </article>
-
-              <article class="review-card">
-                <div class="review-stars" aria-label="5 stars">
-                  <svg viewBox="0 0 24 24">
-                    <polygon
-                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
-                  </svg>
-                  <svg viewBox="0 0 24 24">
-                    <polygon
-                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
-                  </svg>
-                  <svg viewBox="0 0 24 24">
-                    <polygon
-                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
-                  </svg>
-                  <svg viewBox="0 0 24 24">
-                    <polygon
-                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
-                  </svg>
-                  <svg viewBox="0 0 24 24">
-                    <polygon
-                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
-                  </svg>
-                </div>
-                <p class="review-text">"Great communication and top-tier job on our commercial fleet washing. Punctual
-                  and professional work."</p>
-                <div class="review-author">
-                  <div class="review-avatar"><img src="assets/images/avatar-marcus.webp" alt="Marcus S." /></div>
-                  <div>
-                    <div class="review-name">Marcus S.</div>
-                    <div class="review-location">Mawson Lakes, Adelaide</div>
-                  </div>
-                </div>
-              </article>
-
+        <div class="testimonials-grid reveal">
+          <article class="testimonial-card">
+            <div class="testimonial-main">
+              <span class="testimonial-tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10.5 12 3l9 7.5"/><path d="M5 9.5V21h14V9.5"/><path d="M10 21v-6h4v6"/></svg>Childcare Centre</span>
+              <div class="review-stars" aria-label="5 stars"><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" /></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" /></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" /></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" /></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" /></svg></div>
+              <blockquote class="testimonial-quote">I don't think it has been so clean in the five years that I have been at the Centre. Bravo.</blockquote>
             </div>
-          </div>
-
-          <!-- Carousel Controls -->
-          <div class="carousel-controls">
-            <button class="carousel-nav-btn prev" id="carouselPrevBtn" aria-label="Previous review">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" width="20" height="20">
-                <polyline points="15 18 9 12 15 6" />
-              </svg>
-            </button>
-            <button class="carousel-nav-btn next" id="carouselNextBtn" aria-label="Next review">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" width="20" height="20">
-                <polyline points="9 18 15 12 9 6" />
-              </svg>
-            </button>
-          </div>
-
-          <!-- Pagination Dots -->
-          <div class="carousel-dots" id="carouselDots"></div>
+            <div class="testimonial-photo" style="background-image:url('assets/images/review-childcare-1.jpg')" role="img" aria-hidden="true"></div>
+            <div class="testimonial-author">
+              <div class="testimonial-name">Juli</div>
+              <div class="testimonial-meta">Centre Director</div>
+                  <div class="testimonial-meta">Queen Elizabeth Hospital Community Child Care Centre</div>
+            </div>
+          </article>
+          <article class="testimonial-card">
+            <div class="testimonial-main">
+              <span class="testimonial-tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10.5 12 3l9 7.5"/><path d="M5 9.5V21h14V9.5"/><path d="M10 21v-6h4v6"/></svg>Residential Property</span>
+              <div class="review-stars" aria-label="5 stars"><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" /></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" /></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" /></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" /></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" /></svg></div>
+              <blockquote class="testimonial-quote">Thank you for great work at our property.</blockquote>
+            </div>
+            <div class="testimonial-photo" style="background-image:url('assets/images/review-residential.jpg')" role="img" aria-hidden="true"></div>
+            <div class="testimonial-author">
+              <div class="testimonial-name">A. R.</div>
+              <div class="testimonial-meta">Homeowner</div>
+                  <div class="testimonial-meta">Adelaide, SA</div>
+            </div>
+          </article>
+          <article class="testimonial-card">
+            <div class="testimonial-main">
+              <span class="testimonial-tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10.5 12 3l9 7.5"/><path d="M5 9.5V21h14V9.5"/><path d="M10 21v-6h4v6"/></svg>Childcare Centre</span>
+              <div class="review-stars" aria-label="5 stars"><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" /></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" /></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" /></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" /></svg><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" /></svg></div>
+              <blockquote class="testimonial-quote">Thank you for completing the job out of hours. It made it very easy for our families to still have access to a very busy space.</blockquote>
+            </div>
+            <div class="testimonial-photo" style="background-image:url('assets/images/review-childcare-2.jpg')" role="img" aria-hidden="true"></div>
+            <div class="testimonial-author">
+              <div class="testimonial-name">Juli</div>
+              <div class="testimonial-meta">Centre Director</div>
+                  <div class="testimonial-meta">Queen Elizabeth Hospital Community Child Care Centre</div>
+            </div>
+          </article>
         </div>
 
         <div class="google-cta reveal">
           <a href="https://www.google.com/maps/place/AquaVL+Property+Care/@-34.9997589,138.2815231,10z/data=!3m1!4b1!4m6!3m5!1s0x17a7f6501771fab:0xeba98ec01f7d978a!8m2!3d-35.000767!4d138.6111598!16s%2Fg%2F11zbp9cdh4?entry=ttu&g_ep=EgoyMDI2MDYxNi4wIKXMDSoASAFQAw%3D%3D"
-            target="_blank" rel="noopener noreferrer" class="google-badge" id="googleReviewsBtn"
-            aria-label="See all reviews on Google">
-            <span class="google-logo">
-              <span class="g-blue">G</span><span class="g-red">o</span><span class="g-yellow">o</span><span
-                class="g-blue">g</span><span class="g-green">l</span><span class="g-red">e</span>
+            target="_blank" rel="noopener noreferrer" class="google-btn" id="googleReviewsBtn">
+            <span class="google-btn-g">G</span>
+            <span class="google-btn-text">See Our Google Reviews
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
             </span>
-            <span class="google-badge-text"><strong>5.0 ★</strong> — See all reviews on Google</span>
           </a>
         </div>
       </div>
@@ -490,7 +298,7 @@
         <div class="services-header reveal">
           <div class="section-tag">Our Services</div>
           <h2 class="section-title" id="servicesTitle">Everything Your Property <span>Needs</span></h2>
-          <p class="section-subtitle">From driveways to rooftops, we handle every surface with professional-grade
+          <p class="section-subtitle">From driveways to windows, we handle every surface with professional-grade
             equipment and meticulous care.</p>
         </div>
 
@@ -740,19 +548,6 @@
                   loading="lazy" />
                 <div class="gallery-label">
                   <h3>Patio &amp; Pavers</h3>
-                </div>
-              </article>
-
-              <article class="gallery-card">
-                <div class="gallery-split-labels">
-                  <span>Before</span>
-                  <span>After</span>
-                </div>
-                <img src="assets/images/before-after-roof.webp"
-                  alt="Before and after roof cleaning in Adelaide — mold and lichen removed, tiles restored"
-                  loading="lazy" />
-                <div class="gallery-label">
-                  <h3>Roof Cleaning</h3>
                 </div>
               </article>
 
